@@ -1,0 +1,22 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlnsXlink="http://www.w3.org/1999/xlink"
+ width="216px" height="68px">
+<defs>
+<filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="216px" height="68px"  >
+    <feOffset in="SourceAlpha" dx="0" dy="2" />
+    <feGaussianBlur result="blurOut" stdDeviation="4.243" />
+    <feFlood floodColor="rgb(0, 0, 0)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="0.48"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+</defs>
+<g filter="url(#Filter_0)">
+<text kerning="auto" fontFamily="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 0.72818293156653, 0, 0, 0.72818293156653,18.9271050274397, 45.1989414000953)" fontSize="49px"><tspan fontSize="49px" fontFamily="Poppins" fill="#FFFFFF">HACK&#32;</tspan><tspan fontSize="49px" fontFamily="Poppins" fill="#FFFFFF">FLIX</tspan></text>
+</g>
+</svg>
