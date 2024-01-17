@@ -10,7 +10,6 @@ function MovieDetails() {
   const [movie, setMovie] = useState();
   const [myList, SetMyList] = useState(false);
   const navigate = useNavigate();
-  console.log(movie)
 
   const location = useLocation();
 

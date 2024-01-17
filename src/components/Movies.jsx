@@ -40,7 +40,7 @@ function Movies() {
   return (
     <>
       <StarRating onRatingChange={setRating} />
-      <div className="container mt-5">
+      <div className="container-fluid mt-5">
         <p className="subtitle mb-3 ps-4">Discover Movies</p>
         <InfiniteScroll
           dataLength={movies.length} // largo actual de movies
