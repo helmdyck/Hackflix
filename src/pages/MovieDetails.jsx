@@ -65,7 +65,7 @@ function MovieDetails() {
                   </h3>
                   <div className="ctas">
                     <div className="play-div">
-                      <button type="button" className="btn btn-light btn-lg">
+                      <button type="button" className="">
                         <i className="bi bi-play-fill"></i>
                         WATCH NOW
                       </button>

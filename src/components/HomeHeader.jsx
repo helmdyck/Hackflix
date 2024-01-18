@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import {nanoid} from "nanoid"
+import { nanoid } from "nanoid";
 
 function Header() {
   const [movies, setMovies] = useState([]);
@@ -34,6 +34,7 @@ function Header() {
                 ? "carousel-item home-header-backdrop active"
                 : "carousel-item home-header-backdrop"
             }
+            key={index}
           >
             <div className="home-action-icons col-9 d-flex align-items-start">
               <h3 className="tagline text-start fst-italic">{movie.title}</h3>
@@ -41,7 +42,15 @@ function Header() {
                 <div className="play-div">
                   <button
                     type="button"
-                    className="btn btn-light btn-lg"
+                    className="play-btn"
+                    onClick={() => navigate(`/movie/${movie.id}`)}
+                  >
+                    <i className="bi bi-play-fill"></i>
+                    WATCH NOW
+                  </button>
+                  <button
+                    type="button"
+                    className="button"
                     onClick={() => navigate(`/movie/${movie.id}`)}
                   >
                     MORE INFO

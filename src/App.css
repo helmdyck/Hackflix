@@ -210,8 +210,35 @@ input[type="radio"] {
 
 .play-div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
+  gap: 10px;
+}
+
+.play-div .button{
+  background-color: rgba(255, 255, 255, 0.461);
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  width: 200px;
+}
+
+.play-div .button:hover{
+  background-color: rgb(255, 255, 255);
+}
+
+.play-div .play-btn{
+  background-color: rgba(255, 255, 255, 0.105);
+  color: white;
+  border: solid white 2px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  width: 200px;
+}
+
+.play-div .play-btn:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 .ctas {

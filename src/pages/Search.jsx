@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
+import Footer from "../components/Footer"
 
 function Search() {
   const [movies, setMovies] = useState([]);
