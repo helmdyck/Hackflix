@@ -64,8 +64,8 @@ function MovieDetails() {
                     {movie.tagline}
                   </h3>
                   <div className="ctas">
-                    <div className="play-div">
-                      <button type="button" className="">
+                    <div className="play-div-mov">
+                      <button type="button" className="play-movie">
                         <i className="bi bi-play-fill"></i>
                         WATCH NOW
                       </button>

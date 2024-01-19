@@ -241,6 +241,22 @@ input[type="radio"] {
   color: black;
 }
 
+.play-div-mov {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.play-div-mov .play-movie{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: none;
+  transition: 0.5s ease;
+  width: 180px;
+  height: 50px;
+}
+
 .ctas {
   display: flex;
   flex-direction: row;
