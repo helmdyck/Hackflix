@@ -165,7 +165,7 @@ input[type="radio"] {
 
 /*Movie Details */
 
-.backdrop-div {
+.backdrop-div .container{
   position: relative;
   background-color: #000000;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.584);
@@ -174,7 +174,7 @@ input[type="radio"] {
 .movie-poster img {
   border-radius: 10px;
 
-  width: 100%;
+  max-width: 300px;
   box-shadow: 0px 0px 10px rgba(47, 47, 47, 0.587);
   border-radius: 10px;
 }
@@ -182,7 +182,7 @@ input[type="radio"] {
 .poster-container {
   position: absolute;
   bottom: 5%;
-  left: 16%;
+  /* left: 16%; */
 }
 
 .addToFave-icon {
@@ -205,7 +205,7 @@ input[type="radio"] {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  /* padding-bottom: 1rem; */
+  padding-bottom: 1rem;
 }
 
 .play-div {
@@ -301,6 +301,20 @@ input[type="radio"] {
 
 .padding-top {
   padding-top: 8rem;
+}
+
+.about-movie{
+  margin-top: 60px;
+}
+
+.mov-title{
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: white;
+}
+
+.tagline{
+  font-style: italic;
 }
 
 /*Home Header*/

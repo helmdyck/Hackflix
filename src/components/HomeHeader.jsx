@@ -37,7 +37,7 @@ function Header() {
             key={index}
           >
             <div className="home-action-icons col-9 d-flex align-items-start">
-              <h3 className="tagline text-start fst-italic">{movie.title}</h3>
+              <h3 className="mov-title pb-3">{movie.title}</h3>
               <div className="ctas">
                 <div className="play-div">
                   <button

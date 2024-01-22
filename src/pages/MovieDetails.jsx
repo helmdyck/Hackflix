@@ -51,41 +51,43 @@ function MovieDetails() {
               alt=""
             />
             <div className="gradient-shadow-bottom"></div>
-            <div className="poster-container">
-              <div className="row">
-                <div className="movie-poster col-3">
-                  <img
-                    src={`https://image.tmdb.org/t/p/w500/${moviePoster}`}
-                    alt=""
-                  />
-                </div>
-                <div className="action-icons col-9">
-                  <h3 className="tagline text-start fst-italic">
-                    {movie.tagline}
-                  </h3>
-                  <div className="ctas">
-                    <div className="play-div-mov">
-                      <button type="button" className="play-movie">
-                        <i className="bi bi-play-fill"></i>
-                        WATCH NOW
-                      </button>
-                      <p className="runtime pt-2">{movie.runtime} Minutes</p>
-                    </div>
-                    <>
-                      <div className="addToFave-icon" onClick={toggleFave}>
-                        {myList ? (
-                          <i className="bi bi-check2"></i>
-                        ) : (
-                          <i className="bi bi-plus-circle"></i>
-                        )}
-                      </div>
-                    </>
 
-                    {genres.map((genre) => (
-                      <p className="genres" key={genre.id}>
-                        {genre.name}
-                      </p>
-                    ))}
+            <div className="container">
+              <div className="poster-container">
+                <div className="row">
+                  <div className="movie-poster col-3">
+                    <img
+                      src={`https://image.tmdb.org/t/p/w500/${moviePoster}`}
+                      alt=""
+                    />
+                  </div>
+
+                  <div className="action-icons col-9">
+                    <h3 className="mov-title">{movie.title}</h3>
+                    <div className="ctas">
+                      <div className="play-div-mov">
+                        <button type="button" className="play-movie">
+                          <i className="bi bi-play-fill"></i>
+                          WATCH NOW
+                        </button>
+                        <p className="runtime pt-2">{movie.runtime} Minutes</p>
+                      </div>
+                      <>
+                        <div className="addToFave-icon" onClick={toggleFave}>
+                          {myList ? (
+                            <i className="bi bi-check2"></i>
+                          ) : (
+                            <i className="bi bi-plus-circle"></i>
+                          )}
+                        </div>
+                      </>
+
+                      {genres.map((genre) => (
+                        <p className="genres" key={genre.id}>
+                          {genre.name}
+                        </p>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -93,10 +95,10 @@ function MovieDetails() {
           </div>
 
           <div className="gradient-shadow-top"></div>
-          <div className="container text-white mt-3">
+          <div className="container about-movie text-white">
             <div className="row">
               <div className="col">
-                <h2 className="md-title">{movie.title}</h2>
+                <h2 className="tagline">{movie.tagline}</h2>
               </div>
               <div className="col"></div>
             </div>
