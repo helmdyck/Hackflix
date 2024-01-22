@@ -40,7 +40,7 @@ function Movies() {
   return (
     <>
       {/* <StarRating onRatingChange={setRating} /> */}
-      <div className="container-fluid mt-5">
+      <div className="container-fluid mt-5 px-5">
         <p className="subtitle mb-3 ps-4">Discover Movies</p>
         <InfiniteScroll
           dataLength={movies.length} // largo actual de movies
@@ -52,10 +52,10 @@ function Movies() {
             </div>
           } // Se muestra mientras se cargan más datos
         >
-          <div className="row gap-2">
+          <div className="row">
             {movies.map((movie) => (
               <div className="col d-flex justify-content-center" key={movie.id}>
-                <div className="card">
+                <div className="card mb-5">
                   <img
                     src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                     className="poster"

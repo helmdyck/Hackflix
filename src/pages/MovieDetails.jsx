@@ -55,14 +55,14 @@ function MovieDetails() {
             <div className="container">
               <div className="poster-container">
                 <div className="row">
-                  <div className="movie-poster col-3">
+                  <div className="col-3 movie-poster ">
                     <img
                       src={`https://image.tmdb.org/t/p/w500/${moviePoster}`}
                       alt=""
                     />
                   </div>
 
-                  <div className="action-icons col-9">
+                  <div className="col-9 action-icons">
                     <h3 className="mov-title">{movie.title}</h3>
                     <div className="ctas">
                       <div className="play-div-mov">

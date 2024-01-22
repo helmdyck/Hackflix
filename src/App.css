@@ -165,11 +165,19 @@ input[type="radio"] {
 
 /*Movie Details */
 
+.poster-container {
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  /* left: 16%; */
+}
+
 .backdrop-div .container{
   position: relative;
   background-color: #000000;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.584);
 }
+
 
 .movie-poster img {
   border-radius: 10px;
@@ -179,11 +187,6 @@ input[type="radio"] {
   border-radius: 10px;
 }
 
-.poster-container {
-  position: absolute;
-  bottom: 5%;
-  /* left: 16%; */
-}
 
 .addToFave-icon {
   color: white;
