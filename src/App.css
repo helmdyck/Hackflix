@@ -283,6 +283,7 @@ input[type="radio"] {
 .movie-details {
   color: rgb(255, 255, 255);
   font-size: 1rem;
+  margin-bottom: 3rem;
 }
 
 .genres {

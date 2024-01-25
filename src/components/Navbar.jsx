@@ -56,7 +56,9 @@ function Navbar() {
                   Settings
                 </button>
               </li>
-              <li><hr className="dropdown-divider"/></li>
+              <li>
+                <hr className="dropdown-divider" />
+              </li>
               <li>
                 <button className="dropdown-item " type="button">
                   Sign Out
@@ -97,9 +99,7 @@ function Navbar() {
           aria-labelledby="offcanvasDarkNavbarLabel"
         >
           <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              HACKFLIX
-            </h5>
+            <img className="logo-hackflix" src={logohf} alt="" />
             <button
               type="button"
               className="btn-close btn-close-white"
@@ -115,18 +115,23 @@ function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/search" className="nav-link">
-                  Search
+                <NavLink to="" className="nav-link">
+                  Series
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/sobre-nosotros" className="nav-link">
-                  About us
+                <NavLink to="" className="nav-link">
+                  Movies
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/contacto" className="nav-link">
-                  Contact
+                <NavLink to="" className="nav-link">
+                  Trending Now
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="" className="nav-link">
+                  Last Chance
                 </NavLink>
               </li>
             </ul>

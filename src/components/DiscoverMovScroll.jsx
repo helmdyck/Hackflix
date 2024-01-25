@@ -62,7 +62,7 @@ function DiscoverMovScroll() {
           onMouseMove={handleMouseMove}
         >
           {movies.map((movie) => (
-            <div className="col justify-content-start my-3" key={movie.id}>
+            <div className="col justify-content-start mt-3 mb-5" key={movie.id}>
               <div className="card">
                 <img
                   src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
