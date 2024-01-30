@@ -4,13 +4,13 @@ import { useEffect } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 import axios from "axios";
 import DiscoverMovScroll from "../components/DiscoverMovScroll";
+import Tooltip from "../components/Tooltip";
 
 function MovieDetails() {
   const params = useParams();
   const [movie, setMovie] = useState();
   const [myList, SetMyList] = useState(false);
   const navigate = useNavigate();
-  console.log(movie)
 
   const location = useLocation();
 
@@ -67,10 +67,12 @@ function MovieDetails() {
                     <h3 className="mov-title">{movie.title}</h3>
                     <div className="ctas">
                       <div className="play-div-mov">
-                        <button type="button" className="play-movie">
-                          <i className="bi bi-play-fill"></i>
-                          WATCH NOW
-                        </button>
+                        <Tooltip text={"No está disponible"}>
+                          <button type="button" className="play-movie">
+                            <i className="bi bi-play-fill"></i>
+                            WATCH NOW
+                          </button>
+                        </Tooltip>
                         <p className="runtime pt-2">{movie.runtime} Minutes</p>
                       </div>
                       <>
